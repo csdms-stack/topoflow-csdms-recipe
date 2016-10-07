@@ -9,8 +9,9 @@ import pymt.components
 components = pymt.components.__all__
 print('found {num} components'.format(num=len(components)))
 
-for cls in components:
-    print('instantiate: {name}'.format(name=cls.__name__))
+for name in components:
+    print('instantiate: {name}'.format(name=name))
+    cls = pymt.components.__dict__[name]
     model = cls()
 
     for default in model.defaults:
