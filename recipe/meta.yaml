@@ -1,13 +1,12 @@
 {% set name = "csdms-topoflow" %}
 {% set version = "3.4" %}
-{% set build_string = environ.get('GIT_BUILD_STR', '') %}
 
 package:
   name: {{ name }}
   version: {{ version }}
 
 source:
-  git_url: https://github.com/mdpiper/topoflow
+  git_url: https://github.com/csdms/topoflow-bridge
 
 requirements:
   build:
