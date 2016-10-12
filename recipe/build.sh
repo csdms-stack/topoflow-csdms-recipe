@@ -1,3 +1,4 @@
 #! /bin/bash
 
-bmi babelize . --prefix=$PREFIX
+python setup.py install
+bmi babelize ./.bmi/channels_diffusive_wave --prefix=$PREFIX
