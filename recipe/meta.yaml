@@ -5,18 +5,27 @@ package:
   name: {{ name }}
   version: {{ version }}
 
-source:
-  git_url: https://github.com/csdms/topoflow-bridge
-
 requirements:
-  build:
-    - bmi-babel
-    - topoflow
   run:
     - bmi-babel
     - topoflow
+    - csdms-topoflow-channels-diffusive-wave
+    - csdms-topoflow-channels-dynamic-wave
+    - csdms-topoflow-channels-kinematic-wave
+    - csdms-topoflow-diversions-fraction-method
+    - csdms-topoflow-erode-d8-global
+    - csdms-topoflow-erode-d8-local
+    - csdms-topoflow-evap-energy-balance
+    - csdms-topoflow-evap-read-file
+    - csdms-topoflow-infil-beven
+    - csdms-topoflow-infil-green-ampt
+    - csdms-topoflow-infil-richards-1d
+    - csdms-topoflow-meteorology
+    - csdms-topoflow-satzone-darcy-layers-balance
+    - csdms-topoflow-snow-degree-day
+    - csdms-topoflow-snow-energy-balance
 
-test:
-  requires:
-    - pymt
-    - bmi-tester
+about:
+  home: http://csdms.colorado.edu/wiki/Model_help:TopoFlow
+  license: Apache
+  summary: The collection of CSDMS-wrapped topoflow components.
